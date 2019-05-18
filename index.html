@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="manifest" href="manifest.json">
+	<title>Document</title>
+	<style>
+		.container {
+			margin: 150px auto;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		hello pwa!
+	</div>
+	<div class="container">
+			<button type="button" onclick="goToDetail()">去Detail页</button>
+	</div>
+	<script>
+		function goToDetail() {
+			window.location.href = window.location.protocol + '//' + window.location.host + '/detail.html';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+	"name": "PWA 天气 Demo",
+	"short_name": "PWA 天气",
+	"display": "fullscreen",
+	"start_url": "/detail.html" 
+}
