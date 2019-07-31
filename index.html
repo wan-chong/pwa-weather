@@ -5,25 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="manifest" href="manifest.json">
+
+	<!-- ios12.1.4 需要添加下面link，才能正常显示桌面图标 -->
+	<link rel="apple-touch-icon" href="/assets/imgs/apple-touch-icon-152x152.png">
 	<title>Document</title>
 	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
 		.container {
-			margin: 150px auto;
+			width: 100%;
 			text-align: center;
 		}
+		
 	</style>
 </head>
 <body>
 	<div class="container">
-		hello pwa!
-	</div>
-	<div class="container">
-			<button type="button" onclick="goToDetail()">去Detail页</button>
+		PWA Demo
+
+		<div class="container">
+				<button type="button" onclick="goToDetail()">去Detail页</button>
+		</div>
 	</div>
 	<script>
-		function goToDetail() {
-			window.location.href = window.location.protocol + '//' + window.location.host + '/detail.html';
-		}
+		 document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+		
 	</script>
+
 </body>
 </html>
